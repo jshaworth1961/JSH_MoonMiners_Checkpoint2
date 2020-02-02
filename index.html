@@ -1,0 +1,189 @@
+<!--Base Bootstrap index.html-->
+<!--This is Moon Miner version1.4-->
+<!--Written by John S. Haworth-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Sensei Moon Miner V1.4</title>
+</head>
+
+<body class="container-fluid body-style">
+
+    <header>
+        <div class="row">
+            <div class=" col-12 col-md-4">
+                <p class="p-header-text">
+                    Moon Miner 1.4
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="p-header-img">
+                    <img class="img-bugs" src="bugs_with_cheese.jpg">
+                    
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="p-total-cheese">Current Total Cheese Bricks</p>
+                <p class="p-tc"><input id="input-tc" class="input-tc" type="text"></p>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="p-work-text">
+                        Work
+                </div>
+                <div class="col">
+                    <p class="btn-center">
+                        <button class="btn-work" onclick="doSomeWorkOnClick()">Do Some Work <img class = "img-beagle" src ="beagle.jpg">
+                        </button>
+                    </p>
+                </div>
+
+        </section>
+        <hr>
+        <section id="click-upgrades_title">
+            <p class="p-click-text">Available Click Upgrades</p>
+        </section>
+
+        <section id="clickUpgrades">
+            <div class="row container-fluid">
+                <div class="col-12 col-md-3 border p-2">
+                    <p class="btn-center">
+                        <button id="btn-buy-shovel" class="btn-buy" onclick="buyClickUpgrade('shovel')">Buy
+                            Shovel<img class="img-shovel" src="shovel.png">  </button>
+                    </p>
+                    <p class="btn-center">
+                        <label class="lbl-s-count">Harvest Power</label>
+                        <input id="i-shovel-harvest" class="input-counter" type="text">
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 border p-2">
+
+                    <p class="p-info">
+                        <label class="lbl-s-count">Shovel Count</label>
+                        <input id="i-shovel-count" class="input-counter" type="text">
+                    </p>
+                    <p class="p-info">
+                        <label class="lbl-s-count">Shovel Price</label>
+                        <input id="i-shovel-price" class="input-counter" type="text">
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-3 border p-2">
+                    <p class="btn-center">
+                        <button id="btn-buy-excavator" class="btn-buy" onclick="buyClickUpgrade('excavator')">Buy
+                            Excavator <img class = "img-excavator" src = "excavator.jpg"></button>
+                    </p>
+                    <p class="btn-center">
+                        <label class="lbl-s-count">Harvest Power</label>
+                        <input id="i-excavator-harvest" class="input-counter" type="text">
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 border p-2">
+                    <p class="p-info">
+                        <label class="lbl-s-count">Excavator Count</label>
+                        <input id="i-excavator-count" class="input-counter" type="text">
+                    </p>
+                    <p class="p-info">
+                        <label class="lbl-s-count">Excavator Price</label>
+                        <input id="i-excavator-price" class="input-counter" type="text">
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <hr>
+        <section id="auto-upgrades_title">
+            <p class="p-auto-text">Available Automatic Upgrades
+
+            </p>
+        </section>
+        <section id="clickUpgrades">
+            <div class="row container-fluid">
+                <div class="col-12 col-md-3 border p-2">
+                    <p class="btn-center">
+                        <button id="btn-buy-jackhammer" class="btn-buy" onclick="buyAutoUpgrade('jackhammer')">Buy
+                            Jackhammer<img class = "img-jackhammer" src ="jackhammer2.jpg"></button>
+                    </p>
+                    <p class="btn-center">
+                        <label class="lbl-s-count">Harvest Power</label>
+                        <input id="i-jackhammer-harvest" class="input-counter" type="text">
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 border p-2">
+
+                    <p class="p-info">
+                        <label class="lbl-jh-count">Jackhammer Count</label>
+                        <input id="i-jackhammer-count" class="input-counter" type="text">
+                    </p>
+                    <p class="p-info">
+                        <label class="lbl-jh-count">Jackhammer Price</label>
+                        <input id="i-jackhammer-price" class="input-counter" type="text">
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-3 border p-2">
+                    <p class="btn-center">
+                        <button id="btn-buy-wheelbarrow" class="btn-buy" onclick="buyAutoUpgrade('wheelbarrow')">Buy
+                            Wheelbarrow <img class = "img-wheelbarrow" src = "wheelbarrow.jpg"></button>
+                    </p>
+                    <p class="btn-center">
+                        <label class="lbl-jh-count">Harvest Power</label>
+                        <input id="i-wheelbarrow-harvest" class="input-counter" type="text">
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 border p-2">
+                    <p class="p-info">
+                        <label class="lbl-jh-count">Wheelbarrow Count</label>
+                        <input id="i-wheelbarrow-count" class="input-counter" type="text">
+                    </p>
+                    <p class="p-info">
+                        <label class="lbl-s-count">Wheelbarrow Price</label>
+                        <input id="i-wheelbarrow-price" class="input-counter" type="text">
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <hr>
+    </main>
+    <footer>
+       
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

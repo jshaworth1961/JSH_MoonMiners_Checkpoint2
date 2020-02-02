@@ -1,0 +1,173 @@
+/*
+* {
+    outline: solid darkred;
+}
+*/
+
+.body-style {
+    background-color: black;
+}
+
+.btn-buy {
+    background-color: seagreen;
+    border: solid slategray;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.btn-buy:hover {
+    background-color: green;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-work {
+    background-color: rgb(151, 131, 15);
+    border: solid black;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.btn-work:hover {
+    background-color: green;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: slategray;
+}
+
+hr {
+    border: solid slategray;
+}
+
+.img-beagle
+{
+    height:10vh;
+}
+
+.img-bugs {
+    height: 20vh;
+}
+
+.img-excavator
+{
+    height:5vh;
+}
+
+.img-jackhammer
+{
+    height:5vh;
+}
+
+.img-shovel
+{
+    height:5vh;
+}
+
+.img-wheelbarrow
+{
+    height:5vh;
+}
+
+.input-counter {
+    background-color: slategray;
+    max-width: 10vw;
+    height: 4vh;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.input-tc {
+    background-color: slategray;
+    width: 10vw;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.lbl-jh-count {
+    background-color: slateblue;
+    color: black;
+    max-width: 40vw;
+    height: 4vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: .1em;
+}
+
+.lbl-s-count {
+    background-color: slateblue;
+    color: black;
+    max-width: 40vw;
+    height: 4vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: .1em;
+}
+
+.p-info {
+    display: flex;
+    justify-content: center;
+}
+
+.p-tc {
+    display: flex;
+    justify-content: center;
+}
+
+.p-auto-text {
+    display: flex;
+    justify-content: center;
+    color: slategray;
+    font-size: 1.5em;
+}
+
+.p-click-text {
+    display: flex;
+    justify-content: center;
+    color: slategray;
+    font-size: 1.5em;
+}
+
+.p-counter {
+    display: flex;
+    justify-content: center;
+    color: slategray;
+    font-size: 1em;
+}
+
+.p-header-img {
+    display: flex;
+    justify-content: center;
+}
+
+.p-header-text {
+    color: slategray;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.p-total-cheese {
+    color: slategray;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 5vh;
+}
+
+.p-work-text {
+    display: flex;
+    justify-content: center;
+    color: slategray;
+    font-size: 1.5em;
+}
