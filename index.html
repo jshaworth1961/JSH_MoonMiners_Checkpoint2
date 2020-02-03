@@ -1,5 +1,5 @@
 <!--Base Bootstrap index.html-->
-<!--This is Moon Miner version1.4-->
+<!--This is Moon Miner version 2.0-->
 <!--Written by John S. Haworth-->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
 
 
     <link rel="stylesheet" href="./style.css">
-    <title>Sensei Moon Miner V1.4</title>
+    <title>Sensei Moon Miner V2.0</title>
 </head>
 
 <body class="container-fluid body-style">
@@ -23,13 +23,13 @@
         <div class="row">
             <div class=" col-12 col-md-4">
                 <p class="p-header-text">
-                    Moon Miner 1.4
+                    Moon Miner 2.1
                 </p>
             </div>
             <div class="col-12 col-md-4">
                 <p class="p-header-img">
                     <img class="img-bugs" src="bugs_with_cheese.jpg">
-                    
+
                 </p>
             </div>
             <div class="col-12 col-md-4">
@@ -39,16 +39,25 @@
         </div>
     </header>
     <hr>
-    <main>
+    <div id = "player-form"></div>
+    <main id = "main-form">
         <section>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <p class="p-work-text">
-                        Work
+            <div class="row container-fluid">
+                <div class="col-12 col-md-6 border p-3 ">
+                <p class = "  btn-center">
+                    <button id = "player-settings" class = 'btn-player' onclick = "loadPlayerSettings()">Edit Player Settings</button>
+                </p>
+                <p class="  btn-center">
+                    <button id="game-reset" class='btn-reset' onclick="resetGame()">Reset Game</button>
+                </p>
+                    
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6 border p-1">
+                    <p class="p-work-text">
+                        Work</p>
                     <p class="btn-center">
-                        <button class="btn-work" onclick="doSomeWorkOnClick()">Do Some Work <img class = "img-beagle" src ="beagle.jpg">
+                        <button class="btn-work" onclick="doSomeWorkOnClick()">Do Some Work <img class="img-beagle"
+                                src="beagle.jpg">
                         </button>
                     </p>
                 </div>
@@ -64,7 +73,7 @@
                 <div class="col-12 col-md-3 border p-2">
                     <p class="btn-center">
                         <button id="btn-buy-shovel" class="btn-buy" onclick="buyClickUpgrade('shovel')">Buy
-                            Shovel<img class="img-shovel" src="shovel.png">  </button>
+                            Shovel<img class="img-shovel" src="shovel.png"> </button>
                     </p>
                     <p class="btn-center">
                         <label class="lbl-s-count">Harvest Power</label>
@@ -87,7 +96,7 @@
                 <div class="col-12 col-md-3 border p-2">
                     <p class="btn-center">
                         <button id="btn-buy-excavator" class="btn-buy" onclick="buyClickUpgrade('excavator')">Buy
-                            Excavator <img class = "img-excavator" src = "excavator.jpg"></button>
+                            Excavator <img class="img-excavator" src="excavator.jpg"></button>
                     </p>
                     <p class="btn-center">
                         <label class="lbl-s-count">Harvest Power</label>
@@ -121,7 +130,7 @@
                 <div class="col-12 col-md-3 border p-2">
                     <p class="btn-center">
                         <button id="btn-buy-jackhammer" class="btn-buy" onclick="buyAutoUpgrade('jackhammer')">Buy
-                            Jackhammer<img class = "img-jackhammer" src ="jackhammer2.jpg"></button>
+                            Jackhammer<img class="img-jackhammer" src="jackhammer2.jpg"></button>
                     </p>
                     <p class="btn-center">
                         <label class="lbl-s-count">Harvest Power</label>
@@ -144,7 +153,7 @@
                 <div class="col-12 col-md-3 border p-2">
                     <p class="btn-center">
                         <button id="btn-buy-wheelbarrow" class="btn-buy" onclick="buyAutoUpgrade('wheelbarrow')">Buy
-                            Wheelbarrow <img class = "img-wheelbarrow" src = "wheelbarrow.jpg"></button>
+                            Wheelbarrow <img class="img-wheelbarrow" src="wheelbarrow.jpg"></button>
                     </p>
                     <p class="btn-center">
                         <label class="lbl-jh-count">Harvest Power</label>
@@ -170,7 +179,7 @@
         <hr>
     </main>
     <footer>
-       
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

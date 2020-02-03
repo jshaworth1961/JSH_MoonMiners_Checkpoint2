@@ -1,3 +1,5 @@
+/* Moon Miner 2.0 2.3.2020 written by JSH */
+
 /*
 * {
     outline: solid darkred;
@@ -19,9 +21,38 @@
     background-color: green;
 }
 
+.btn-change-cb {
+    background-color: gold;
+    height: 5vh;
+    font-weight: bold;
+}
+
+.btn-change-cb:hover {
+    background-color: green;
+}
+
 .btn-center {
     display: flex;
     justify-content: center;
+}
+
+.btn-player {
+    background-color: steelblue;
+    font-weight: bold;
+}
+
+.btn-player:hover {
+    background-color: green;
+}
+
+.btn-reset {
+    background-color: darkred;
+    color: slategray;
+    font-weight: bold;
+}
+
+.btn-reset:hover {
+    background-color: green;
 }
 
 .btn-work {
@@ -35,6 +66,10 @@
     background-color: green;
 }
 
+.fieldset-player {
+    background-color: slateblue;
+}
+
 .footer-text {
     display: flex;
     justify-content: center;
@@ -46,33 +81,28 @@ hr {
     border: solid slategray;
 }
 
-.img-beagle
-{
-    height:10vh;
+.img-beagle {
+    height: 10vh;
 }
 
 .img-bugs {
     height: 20vh;
 }
 
-.img-excavator
-{
-    height:5vh;
+.img-excavator {
+    height: 5vh;
 }
 
-.img-jackhammer
-{
-    height:5vh;
+.img-jackhammer {
+    height: 5vh;
 }
 
-.img-shovel
-{
-    height:5vh;
+.img-shovel {
+    height: 5vh;
 }
 
-.img-wheelbarrow
-{
-    height:5vh;
+.img-wheelbarrow {
+    height: 5vh;
 }
 
 .input-counter {
@@ -84,12 +114,31 @@ hr {
     text-align: center;
 }
 
+.input-edit-cb {
+    background-color: rgba(255, 217, 0, 0.705);
+    font-weight: bolder;
+    text-align: center;
+    height: 4.9vh;
+    width: 10vw;
+    border: solid gray;
+}
+
 .input-tc {
     background-color: slategray;
     width: 10vw;
     color: black;
     font-weight: bolder;
     text-align: center;
+}
+
+.lbl-edit-cb {
+    background-color: slategray;
+    color: black;
+    height: 5vh;
+    font-weight: bold;
+    text-align: center;
+    padding-top: .5vh;
+    border: solid gray;
 }
 
 .lbl-jh-count {
@@ -117,6 +166,13 @@ hr {
 .p-info {
     display: flex;
     justify-content: center;
+}
+
+.p-player-edit {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
 }
 
 .p-tc {
